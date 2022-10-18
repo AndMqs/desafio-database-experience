@@ -21,3 +21,8 @@
 3. [PostgreSQL](https://www.postgresql.org/download/) 
 4. [DB Designer](https://www.dbdesigner.net/)
 5. [Draw.io](https://app.diagrams.net/)
+
+**Materias para auxílio:**
+1. [Repositório do gilissanos](https://github.com/gilissantos/SQL)
+2. [Repositório do alesonsousa](https://github.com/alessonsousa/Queries-sql-samples)
+
