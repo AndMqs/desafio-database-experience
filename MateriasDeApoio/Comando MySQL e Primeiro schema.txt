@@ -1,0 +1,62 @@
+create schema/database (nome): criar banco de dados
+help: lista de comandos 
+use (nome): entrar na tabela do bd
+show tables: mostrar o que tem na tabela
+drop (nome): apagar o database
+
+Criando o primeiro schema - parte 1:
+
+show databases;
+create database first_example;
+use first_example;
+show tables;
+CREATE TABLE person(
+	person_id smallint unsigned,
+	fname varchar(20),
+	lname varchar(20),
+	gender enum('M','F','Others'),
+	birth_date DATE,
+	street varchar(30),
+	city varchar(20),
+	state varchar(20),
+	country varchar(20),
+	postal_code varchar(20),
+    primary key (person_id)
+);
+desc person; - comando pra mostrar a tabela que foi criada
+
+create table favorite_food(
+	person_id smallint unsigned,
+    food varchar(20),
+    constraint pk_favorite_food primary key (person_id, food),
+    constraint fk_favorite_person_id foreign key (person_id) references person(person_id)
+    );
+    
+desc farovite_food;
+show databases;
+select * from information_schema.table_constraints
+where constraint_schema = 'first_exemple';
+
+desc person;
+
+insert into person values ('2', 'Carolina','Silva','F','1997-08-21',
+							'rua tal', 'Cidade J', 'RJ', 'Brasil', '26054-89');
+                            
+select * from person;
+
+desc favorite_food;
+insert into favorite_food values (2,'lasanha'); 
+
+select * from favorite_food;
+
+
+clausulas SQL
+função > execução:
+- select * from
+
+
+TERMOS SQL
+Identificador: relacionado a chave; a maneira como conseguimos identificar as instancias dentro das tabelas
+Operador: está relacionado as queries que irei executar
+Constante: utilizada dentro das operações
+Expressão

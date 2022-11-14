@@ -1,0 +1,12 @@
+Comandos no MySQL
+
+- show databases;
+
+Como deletar e refazer cenários
+- create database (nome) :crio a pasta
+
+- use (nome do banco) : eu entro nele
+
+drop database (nome) : deleto a basta
+
+create table (nome) :crio uma tabela

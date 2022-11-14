@@ -1,0 +1,88 @@
+Contextualização do Cenário na Área de Banco de Dados
+
+Cenário de dados
+- O que são bancos de dados? é uma coleção organizada de informações - ou dados - estruturadas, normalmente armazenadas eletronicamente em um sistema de computado
+
+- Big Data: Big data é a área do conhecimento que estuda como tratar, analisar e obter informações a partir de conjuntos de dados grandes demais para serem analisados por sistemas tradicionais
+
+- Dados:  é o registro do atributo de um ente, objeto ou fenômeno onde registro indica o ato de registrar, ou seja, é a gravação ou a impressão de caracteres ou símbolos que tenham um significado em algum documento ou suporte físico
+
+*SGBD: ambiente específico, voltado para o gerenciamento de dados ; performance - Sistema de gerenciamento de banco de dados
+- Contexto
+- Coerência
+- Propósito
+
+Diversas fontes distintas produzindo dados, que são gerenciados por algum tipo de software. Faço acesso a esses dados atraves de um API
+
+------------------------------------------------------------------
+
+SGBDs
+A função dele é gerenciar os dados; que tipos de dados, a estrutura e diretrizes que envolvem o meu contexto
+- Contrução: inserção dos dados dentro da estrutura, como será o acesso ao banco de dados
+- Manipulação: sgbd está rodando, ok; está relacionada a recuperação de informações, geração de relatórios; manutenção dos dados
+- Compartilhamento: grupos diferentes interessados no mesmo dado, acessando simultaneamente. Algumas regras são criadas em prol de gerenciar os acessos. Por padrão o BD realiza o bloqueio e a liberação das tabelas.
+
+*Conseguimos executar uma serie de ações, submetendo as transações ao sgbd. As consultas que a gente faz nada mais são que solicitações.
+
+*Tem proteção contra mal funcionamento e proteção de acesso, restringindo-os
+
+*É um software modular, é composto por outros softwares inside que vão auxiliá-lo na execução das tarfeas associadas.
+
+Meta-dados: informações que fornecem uma descrição concisa dos dados contidos no BD
+
+-----------------------------------------------------------------
+
+Modelo de banco de dados Relacional
+
+Está relacionado a teoria de conjunto, onde conseguimos abstrair até certo ponto a estrutura de cada entidade. Quando se realiza uma operação de união, não importa os atributos diferentes.
+- DBA: administrador do banco de dados. Ele vai definir as tabelas e estruturas para os dados, determinar as regras que vão estabelecer o contexto. Os comandos que são utilizados por ele serão traduzidor por LDD (linguagem de definição de dados). 
+
+Como o Banco de dados entende a LDD?
+Será realizada uma tradução onde as informações precisam ser compiladas. Depois disso ela passa por um mecnismo de execução - passar por linguagem de máquina e executá-la. Após esse processo o gerenciador trata a demnada e direciona corretamente.
+
+O usuario convencional utiliza recuperando e atualizando informações, altera e extrai informações.
+
+------------------------------------------------------------
+
+SGBDs mais utilizados pelo mercado
+- Oracle: foi o pioneiro, projetado para ter performance
+Tem uma arquitetura para atender a demanda de grandes corporações
+
+- MySQL: é uma sgbs de solução de código aberto, um dos mais utilizados no mundo. Bom pra aplicações web; é um sgbd versátil.
+
+- SQL Serve: plataforma mais sofisticada, tendo integração com BI.
+
+- PostgreSQL: é considerado um exemplo qdo se trata de especificação, é extremamente aderente a especificação. É escolha para algumas linguagens específicas.
+
+- Mongo DB: orientado a documentos; banco que armazena dados em bloco. A estrutura dos dados estão dentro do documento. Não é um modelo relacional.
+
+- Redis: No cicle, orientado a achar valor, performatíco e escalável. Armazena suas informações me memoria 14min
+
+- ElasticSearch: mecanismo de busca distribuido que é capaz de atender um grande numero de casos. Ele trata os dados de maneira mais centralizada. Faz as requisições utilizando HTTP
+
+- Axcess: do windows, é mais simples
+
+- MariaDB, cassandra (no ciclo, gratuito, open serce, voltado pra ambiente de gerenciamento de alto escala)
+
+Influências para escolha no mercado: tempo de mercado, popularidade, documentação, robustez, confiabilidade, segurança
+
+-----------------------------------------------------------
+
+Paralelismo: multiplos processadores operando concorrentemente
+
+Big data: processamento paralelo de dados persistentes e particionados. ele processa e armazena, enqto HBC
+apenas processa
+
+Cloud: recursos de terceiros - soluções de tecnologia como serviço; azure e aws
+
+---------------------------------------------------------------
+
+Mercado de data
+-Engenheiro de dados: desenho/construção de uma solução; sustentação das soluções de dados
+-Cientista de dados: modelagem, reconhecimentode padrões. Busca responder perguntas atreladas ao contexto do negócio
+-Analista da dados: preocupado na representação visualdos dados, na criação de dashboards. Busca entender o comportamento do negócio
+
+data-driven: voltado para analise de dados
+
+
+

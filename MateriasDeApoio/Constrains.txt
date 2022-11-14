@@ -1,0 +1,83 @@
+SQL Constraints (Restrições) no MySQL
+	As Restrições são regras aplicadas nas colunas de uma tabela.
+	São usadas para limitar os tipos de dados que são inseridos.
+	Podem ser especificadas no momento de criação da tabela (CREATE) ou após a tabela ter sido criada (ALTER)
+
+
+As principais constraints são as seguintes:
+
+NOT NULL
+UNIQUE
+PRIMARY KEY
+FOREIGN KEY
+DEFAULT
+
+NOT NULL
+
+A constraint NOT NULL impõe a uma coluna a NÃO aceitar valores NULL.
+Ou seja, a constraint NOT NULL obriga um campo a sempre possuir um valor.
+Deste modo, não é possível inserir um registro (ou atualizar) sem entrar com um valor neste campo.
+
+
+UNIQUE
+
+A restrição UNIQUE identifica de forma única cada registro em uma tabela de um banco de dados.
+As constraints UNIQUE e PRIMARY KEY garantem a unicidade em uma coluna ou conjunto de colunas.
+Uma constraint PRIMARY KEY automaticamente possui uma restrição UNIQUE definida, portanto não é necessário especificar essa constraint neste caso.
+É possível termos várias constraints UNIQUE em uma mesma tabela, mas apenas uma Chave Primária por tabela (lembrando que uma PK pode ser composta, ou seja, constituída por mais de uma coluna – mas ainda assim, será uma única chave primária).
+
+
+Início » MySQL » MySQL – Constraints (Restrições) Primary Key, FK, Default, etc – 06
+MySQL – Constraints (Restrições) Primary Key, FK, Default, etc – 06
+Postado Em 28/10/2013 [data do post] por Fábio dos Reis [autor do post] em MySQL [categoria do post]
+
+
+SQL Constraints (Restrições) no MySQL
+As Restrições são regras aplicadas nas colunas de uma tabela.
+São usadas para limitar os tipos de dados que são inseridos.
+Podem ser especificadas no momento de criação da tabela (CREATE) ou após a tabela ter sido criada (ALTER)
+As principais constraints são as seguintes:
+
+NOT NULL
+UNIQUE
+PRIMARY KEY
+FOREIGN KEY
+DEFAULT
+
+NOT NULL
+
+A constraint NOT NULL impõe a uma coluna a NÃO aceitar valores NULL.
+Ou seja, a constraint NOT NULL obriga um campo a sempre possuir um valor.
+Deste modo, não é possível inserir um registro (ou atualizar) sem entrar com um valor neste campo.
+
+
+UNIQUE
+
+A restrição UNIQUE identifica de forma única cada registro em uma tabela de um banco de dados.
+As constraints UNIQUE e PRIMARY KEY garantem a unicidade em uma coluna ou conjunto de colunas.
+Uma constraint PRIMARY KEY automaticamente possui uma restrição UNIQUE definida, portanto não é necessário especificar essa constraint neste caso.
+É possível termos várias constraints UNIQUE em uma mesma tabela, mas apenas uma Chave Primária por tabela (lembrando que uma PK pode ser composta, ou seja, constituída por mais de uma coluna – mas ainda assim, será uma única chave primária).
+
+
+PRIMARY KEY
+
+A restrição PRIMARY KEY (Chave Primária) identifica de forma única cada registro em uma tabela de banco de dados.
+As Chaves Primárias devem sempre conter valores únicos.
+Uma coluna de chave primária não pode conter valores NULL
+Cada tabela deve ter uma chave primária e apenas uma chave primária.
+
+
+FOREIGN KEY
+
+Uma FOREIGN KEY (Chave Estrangeira) em uma tabela é um campo que aponta para uma chave primária em outra tabela. Desta forma, é usada para criar os relacionamentos entre as tabelas no banco de dados.
+
+
+DEFAULT
+
+A restrição DEFAULT é usada para inserir um valor padrão especificado em uma coluna.
+O valor padrão será adicionado a todos os novos registros caso nenhum outro valor seja especificado na hora de inserir dados.
+
+
+
+
+

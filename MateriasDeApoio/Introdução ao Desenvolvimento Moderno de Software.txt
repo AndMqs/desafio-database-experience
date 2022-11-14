@@ -1,0 +1,81 @@
+Desenvolvimento Moderno de Software
+- Sistemas baseados em tecnologia web, podendo ser utilizados remotamente atraves de qlq navegador de internet, sem a necessidade de instalação (desktop) e atualização.
+
+Profissionais necessários:
+
+UX/UI Designer: desing da experiencia do usuário; é o processo q visa melhorar a satisfação do usuario, melhorando a usabilidade, a acessibilidade. Os conhecimentos necessários sobre a pessoa que utilizará o produto são coletados por ele, como o cliente vai usar a pagina, etc. Ele cria um prototipo pro programador desenvolver.
+*UX comportamento
+ -Pesquisa
+ -Prototipos
+ -Personas
+ -Objetivos
+
+UI Design (user interface - designer de interface do usuário): profissional responsável em criar o q o usuário irá ver e utilizar no produto. Trabalha junto com o UX; focado em cores, tipografia; microinterações e estilos.
+UX pensa na facilidade e UI como vai ser essa facilidade
+*UI aparencia
+- desing
+- tipografia
+- cores
+- layouts
+
+Essa é a primeira etapa do projeto, o protótipo. E esses profissionais são so que fazem parte do primeiro processo do desenvolvimento do software
+
+Depois do protótipo e o Layout desenhado, a proxima etapa é a codificação.
+Toda aplicação é pensada no modelo do cliente e do fornecedor
+
+Front End: o cara que faz a aplicação do cliente; programa a parte visual de um site ou app, aquilo que conseguimos interagir. Responsável por desenvolver por meio de código uma interface gráfica, normalmente com as tecnologias base da Web - HTML, CSS, JavaScript. O trabalho do carar é exibir as informações utilizando as linguagens de programação citadas acima
+
+ - IDE: ambiente de desenvolvimento integrado é um software para criar aplicaçoes que combina ferramentas comuns de desenvolvimento em uma unica interface grafica do usuario (GUI)
+
+Framework
+De forma basica é um facilitador; traz diversas soluções já pré definidas, que descomplicam o trabalho dos profissionais
+ - Angulas: trabalha com html, javaS e css - front-end
+- Laravel: php
+Spring: Java - back end
+
+
+Back-end
+O que vem por tras de uma aplicação. Tudo que voce usa virtualmente precisam estar salvos em algum lugar, sendo um banco de dados e processado a partir de lá. O back trabalha fazendo a ponte entre os dados que vem do navegador rumo ao banco de dados e vice-versa, sempre aplicando as devidas regras de negócio, validações e garantias em um ambiente onde o usuario final não tenha acesso e possa manipular algo. Tbm trabalha com segurança
+
+ - Algumas Linguagens: JAVA, PHP e C#
+
+API: aplicação feita para gerar o retorno da interface entre o back e o front. É o caminho entre o front e o back/ um intermediario de software que permite que dois apps conversem entre si.
+ - pokeapi.co - site exemplo de api
+
+
+Full Stack
+Trabalha com Back end e com Front end; precisam ter algumas habilidades em uma ampla variedade de linguagens de programação. Pode ser especialista em uma area, mas já rtabalhou com o todo e tem uma noção de toda a linha de produção
+
+
+QA
+Cuida da qualidade do software. Ele analisa os códigos criados pelos programadores, verificando se tem bugs, se a resposta das requisições estão corretas, etc. É treinada em ferramentar específicas de testes e erros.
+Ele verifica se os padrôes de qualidade estão sendo atendidos e se todos os requisitos minimos esperados do produto serão entregues
+
+
+Infraestrutura
+Data center (nuvem) é onde tem uma grande quantidade de servidores (serve informações) que conseguem tratar as informações e requisições em tempo hábil.
+Na nuvem privada encontramos os profissionais de segurança da Tecnologia da Informação (lógica em fisica), mão de obra especializada (software e hardware) e infraestrutura local.
+O sistema operacional do banco de dados  é específico pra ele.
+
+
+Cloud
+Nuvem pública é o nome q se dá a serviços de empresas que disponibilizam o serviços de armazenamento de dados. São sistemas de dados disponibilizados via internet, em vez de servidores físicos tradicionais.
+
+ - O profissional de cloud computing é responsável pela infraestrutura de nuvem oferecida aos clientes.
+
+
+Mobile
+Back end é o mesmo do web. O que muda é o front end, que precisa adaptar pro sistema mobile requisitado e pro designer
+Linguagem: JAVA ou Kotlin e Swift (ios)
+Framework: android estudio e xcode (ios)
+ - Pra programar pro IOS precisa ter um hardware da ios ou um apk
+
+* Desenvolvimento híbrido: atende tanto o android quanto o ios com um unico código. Como não tenho a performance ideal não é indicado para criação de games.
+Frameworks: Ionic / flutter / react Native
+ - Existe um desenvolvimento Nativo e o híbrido
+
+
+
+
+
+

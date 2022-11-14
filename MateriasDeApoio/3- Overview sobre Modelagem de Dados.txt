@@ -1,0 +1,20 @@
+INTRODUÇÃO Á MODELAGEM DE DADOS
+- O q é modelagem no cenário SGBD?
+Modelo que serve de base para o desenvolvimento do programa. Traz maior compreensão do sistema e conseguir otimizar o tempo de implementação do mesmo; compreender o contexto q o projeto está inserido
+
+*Possui foco na descrição e relacionamento dos elementos que compõem a representação do contexto (mini-mundo)
+
+- Modelo conceitual: representação gráfica que leigos ocnseguem entender
+- Modelo físico: implementação do sistema
+
+Processos de modelagem:
+1- Mini-mundo: delimitando o contexto dos dados
+2- Alto nível: requisitos para criação do modelo
+3- Esquema: definindo estrutura relacional
+4- SGBD: implementando - criando o DB
+
+Esquema- chega para definir e criar uma estrutura de alto nível, fornecemdo a estrutura que seus dador terão para serem persistidos - facilita a compreensão do contexto dos dados
+- Entidade-relacionamento
+- UML 
+
+*SQL  - linguafem declarativa voltada para consulta de dados no SGBD baseada na teoria de conjuntos

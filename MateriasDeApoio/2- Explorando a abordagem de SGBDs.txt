@@ -1,0 +1,138 @@
+Abordagem de SGBD
+
+- Pq utilizar ao inves de abordagem tradicional?
+Pela abordagem tradicional tem q fazer todo o gerenciamento de modo geral, toda a estrutura que define como q os dados são armazenados. 
+
+ - Na abordagem SGBD as aplicações distintas fazem uma consulta ao sistema, e nao um gerenciamento das informações. Facilita o acesso recorrente as aplicações, consegue representar as aplicações, consistencia dos dados, etc
+
+Características principais dentro de um SGBD: Abstração, auto-descrição, isolamento, compartilhamento, multiplas visões, transação multiuser 
+
+----------------------------------------------
+
+Natureza auto-descritiva
+
+Possui uma descrição de sua estrutura e suas regras.
+Schema: estrutura bem definidas sem a utilização das instâncias. Os bancos NoSQL possui uma auto-descrição já dentro do próprio arquivo
+
+O SGBD armazena mais de um banco de dados. O DBA defini os schemas do banco de dados
+
+Catálogo: aqui conseguimos ver como estão os relacionamentos do banco de dados, me dá noçoes de como está o BD, o que q tem nele. Uma vez que o BD precisa retornar aos dados,ele vai consultar os meta dados pra identificar o q procura. O soft modulado dentro do SGBD vai recuperar as informações relacionadas.
+
+----------------------------------------
+
+Isolamento Program/data e Abstração
+
+Na abordagem tradicional não há uma separação do que seria aplicação do que seria o mecanismo relacionado aos dados.
+
+O isolamento que conseguimos atravez do SGBD é otima para manutenção dos dados e do sistema.
+
+Com o SGBD temos duas estrutura: estrutura do BD e o próprio BD. 
+
+- Program-data independence: independência de dados de programa
+
+Uma modificação na abordagem tradicional acaba acarretando em ums reestruturação. Enqto uma modificação no BD dentro do SGBD não impacta a aplicação em nenhum ponto
+
+*Abstração e transparencia com SGBD
+
+-------------------------------------------
+
+Suporte á Multiplas visões dos dados
+- Terão diversas pessoa interessadas nos dados, de diversas areas distintas. Nem todos os dados precisam ser acessados por todo mundo.
+
+Formação das viws: a partir de um conjunto de tabelas, conseguimos pegar ou agregar informações de tabelas diferentes, fazer o processamento e retornar uma visão ( que pode ser read-only). Conseguimos agregar ou excluir determinada informação das viwes, auxiliando no gerenciamento dos dados.
+
+* QUERY: Em inglês, significa pergunta, consulta ou dúvida. É uma solicitação de informações feita ao banco de dados. que retorna uma tabela ou um conjunto dela
+
+--------------------------------------------
+
+COMPARTILHAMENTO DE DADOS E PROCESSAMENTOS DE TRANSAÇÕES MULTIUSUÁRIOS
+
+- Controle de concorrência: mecanismo utilizado pra permitir o acesso de diversos usuarios.
+Ex: reserva de um vôo realizado por varias pessoas. O sistema precisa ter um controle sobre os bancos que serão reservados
+
+- OLTP: abordagem de acesso simultaneo onde tem uma sucessao de operações que são agregadas em uma transação afim de completar uma ação. São sistemas que registram as transações, garantindo que sejam executadas. Precisamos de um ambiente mais otimizado para conseguirmos executar as operações q estão dentro de uma transação
+
+*Aplicação multi-usuarios, execução sem interferencias
+
+Atomicidade > execução sem interferencias > ou acontece ou não acontece. O SGBD tem q ser capaz de retroceder caso dê algum erro no processamento de dados
+
+OLAP > ambiente informativo (ligado ao data warehouse); / OLTP > ambiente operacional (ligado ao BD); são ligados pelo ELT Process
+
+---------------------------------------
+
+ABORDAGEM DE BD - ATORES EM BD; quem trabalha nos bastidores?
+
+- BDs simples: poucas pessoa interessadas em acessar as informações
+- Big Organizations: grandes empresas onde váras pessoas acessam e utilizam os dados. Aqui temos a necessidade de design para usiabilidade, e manutenção.
+
+*Designer de BD
+- Identifica os dados e requisitos
+- Precisa representar e estruturar
+- Faz parte da fase preliminar, entender o que precisa para modelar os dados. Primeira parte de ums elaboração do BD.
+
+*DBA: Administrador do BD
+- Gerencia os recursos do BD
+- Orquestra o sistema
+- Maneja a autorização de acesso
+Geralmente é acompanhado por uma Staff. Tudo que está relacionado ao funcionamento do BD é de responsabilidade dele
+
+*Usuarios finais
+- Os interessados em consumir as informações
+- Acesso > querying (update/ reports)
+- Categorizados
+Esse é o proposito do SGBD; promover o acesso desses usuarios
+
+Diversas facilidades são implementadas para os users do SGBD
+
+Engenheiro de Software: é o cara q programa e desenvolve programas e aplicações e APIs que acessam o BD
+--------------------------------------
+
+Workers em background - BD
+
+Pessoas ligadas indiretamento ao SGBD
+- Designer do sistema e implementação: implementação dos módulos e interfaces do SGBD como um software package. Tem uma série que requisitos que fornecem um ambiente propício pro SGBD operar.
+
+- Pessoal de operação e manutenção: responsável pelo ambiente de hardware e software; cuidar pra tudo funcionar bem
+
+- Desenvolvedores de ferramentas: ferramentas opcionais comoo performance, modelagem, análise
+
+-----------------------------------
+
+VANTAGENS DE UTILIZAR A ABORDAGEM DE SGBD
+
+- Controle de redundância
+- Restrição de acesso; o DBS faz essa configuração
+- Provendo persitência > Impedance Mismatch Problem
+- Estrutura de armazenamento e técnicas de busca; geralmente são em árvores, estruturadas; teoria de conjuntos
+Caching, buffering, indexação
+- Backup e recovery
+- Provendo interface multi-user; perfis de usuarios e varias interfaces
+- Representações de relações complexas
+- Integridade de dados
+- Inferências 
+- Ações com regras 
+- Triggers: start de uma ação a partir de uma ação anterior
+----------------------------------------------
+
+GANHOS EM UTILIZAR SGBDs
+- Padronização, entre data-bases dentro da organização;
+- Redução de tempo no desenvolvimento da aplicação, features do app descontinuadas: retrieval
+- Flexibilidade, tornar o ciclo mais ágil
+- Disponibilidade de info atualizadas, update imediato
+- Economia com escalabilidade, operacional e gerenciamento. A manutenção no SGBD é relativamente baixa
+
+-------------------------------------------
+QUANDO NÃO UTILIZAR SGBDs
+
+Está atrelado ao custo-benefício de vc utilizar um SGBD e o custo de overhead. 
+Você tem multiplos acessos? Precisa de uma big estrutura?
+
+Custo
+- investimento inicial
+- generelidade na definição e processamento
+- segurança, controle de concorrência, recovery, funções de integridade
+
+Ponderar o que realmente precisa no cenário.
+
+O python dá uma série de recursos que podem me auxiliar no projeto. Em alguns casos uma linguagem de programação já resolve o caso.
+
