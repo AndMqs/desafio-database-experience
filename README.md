@@ -1,5 +1,13 @@
-## Repositório Database Experience
-  Area destinada aos desafios de projeto do bootcamp Database Experience oferecido pela DIO, disponibilizando uma experiência rápida em Ciência de Dados para aprimoramento dos principais conceitos de banco de dados SQL e NoSQL. O bootcamp dispoe de 54 horas de imersão, com experiências educacionais e mentorias sobre modelagem de dados, SGBD, EER, arquitetura, queries entre outras.
+
+<h1 align="center">
+<h1 align="center">
+  <br>
+  <img src="https://hermes.digitalinnovation.one/tracks/7df7e300-b035-4b09-a7ad-34d1cb18f9a6.png" alt="logo" height="200">
+</h1>
+
+<h3 align="center"> Repositório Database Experience - Bootcamp DIO</h3>
+
+  Área destinada aos desafios de projeto do bootcamp Database Experience oferecido pela DIO, disponibilizando uma experiência rápida em Ciência de Dados para aprimoramento dos principais conceitos de banco de dados SQL e NoSQL. O bootcamp dispoe de 54 horas de imersão, com experiências educacionais e mentorias sobre modelagem de dados, SGBD, EER, arquitetura, queries entre outras.
 
 
 
