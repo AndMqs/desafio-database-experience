@@ -1,8 +1,8 @@
-Desafio 2
+## Desafio 2
 
 Objetivo: Criar o esquema conceitual para o contexto de oficina com base na narrativa fornecida
 
-Narrativa:
+### Narrativa:
 
 - Sistema de controle e gerenciamento de execução de ordens de serviço em uma oficina mecânica
 - Clientes levam veículos à oficina mecânica para serem consertados ou para passarem por revisões  periódicas
